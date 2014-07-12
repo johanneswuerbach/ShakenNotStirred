@@ -10,11 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController, UISplitViewControllerDelegate {
 
-    @IBOutlet var detailDescriptionLabel: UILabel
     var masterPopoverController: UIPopoverController? = nil
 
+    @IBOutlet var viewTitle: UINavigationItem
+    @IBOutlet var barNotes: UITextView
 
-    var detailItem: AnyObject? {
+    var bar: Bar? {
         didSet {
             // Update the view.
             self.configureView()
@@ -27,9 +28,13 @@ class DetailViewController: UIViewController, UISplitViewControllerDelegate {
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
+        if let detail = self.bar {
+            if let textView = self.barNotes {
+                textView.text = detail.notes
+            }
+            
+            if let viewTitle = self.viewTitle {
+                viewTitle.title = detail.name
             }
         }
     }

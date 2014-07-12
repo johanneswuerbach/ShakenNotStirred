@@ -13,6 +13,7 @@
 		8F18157B1971DC4B003F067F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1815791971DC4B003F067F /* Main.storyboard */; };
 		8F18157D1971DC4B003F067F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F18157C1971DC4B003F067F /* Images.xcassets */; };
 		8F1815891971DC4B003F067F /* ShakenNotStirredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1815881971DC4B003F067F /* ShakenNotStirredTests.swift */; };
+		8F1A5CF11971DECC007DA964 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A5CF01971DECC007DA964 /* Bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8F1815821971DC4B003F067F /* ShakenNotStirredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakenNotStirredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1815871971DC4B003F067F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1815881971DC4B003F067F /* ShakenNotStirredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakenNotStirredTests.swift; sourceTree = "<group>"; };
+		8F1A5CF01971DECC007DA964 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				8F1815791971DC4B003F067F /* Main.storyboard */,
 				8F18157C1971DC4B003F067F /* Images.xcassets */,
 				8F1815711971DC4B003F067F /* Supporting Files */,
+				8F1A5CF01971DECC007DA964 /* Bar.swift */,
 			);
 			path = ShakenNotStirred;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F1815781971DC4B003F067F /* DetailViewController.swift in Sources */,
+				8F1A5CF11971DECC007DA964 /* Bar.swift in Sources */,
 				8F1815761971DC4B003F067F /* MasterViewController.swift in Sources */,
 				8F1815741971DC4B003F067F /* AppDelegate.swift in Sources */,
 			);
@@ -401,6 +405,7 @@
 				8F18158E1971DC4B003F067F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F18158F1971DC4B003F067F /* Build configuration list for PBXNativeTarget "ShakenNotStirredTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				8F1815911971DC4B003F067F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
