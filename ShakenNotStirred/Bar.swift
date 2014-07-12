@@ -11,6 +11,7 @@ import UIKit
 class Bar: NSObject {
     var name: String = ""
     var notes: String = ""
+    var picture: UIImage = UIImage(named: "noPicture.png")
     
     init(name: String, notes: String) {
         self.name = name

@@ -12,6 +12,7 @@ class DetailViewController: UIViewController, UISplitViewControllerDelegate {
 
     var masterPopoverController: UIPopoverController? = nil
 
+    @IBOutlet var pictureView: UIImageView
     @IBOutlet var viewTitle: UINavigationItem
     @IBOutlet var barNotes: UITextView
 
@@ -35,6 +36,11 @@ class DetailViewController: UIViewController, UISplitViewControllerDelegate {
             
             if let viewTitle = self.viewTitle {
                 viewTitle.title = detail.name
+            }
+            
+            if let pictureView = self.pictureView {
+                NSLog(detail.name)
+                pictureView.image = detail.picture
             }
         }
     }
