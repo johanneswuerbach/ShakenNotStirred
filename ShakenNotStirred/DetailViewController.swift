@@ -39,7 +39,6 @@ class DetailViewController: UIViewController, UISplitViewControllerDelegate {
             }
             
             if let pictureView = self.pictureView {
-                NSLog(detail.name)
                 pictureView.image = detail.picture
             }
         }
@@ -59,7 +58,7 @@ class DetailViewController: UIViewController, UISplitViewControllerDelegate {
     // #pragma mark - Split view
 
     func splitViewController(splitController: UISplitViewController, willHideViewController viewController: UIViewController, withBarButtonItem barButtonItem: UIBarButtonItem, forPopoverController popoverController: UIPopoverController) {
-        barButtonItem.title = "Master" // NSLocalizedString(@"Master", @"Master")
+        barButtonItem.title = "Bars" // NSLocalizedString(@"Master", @"Master")
         self.navigationItem.setLeftBarButtonItem(barButtonItem, animated: true)
         self.masterPopoverController = popoverController
     }
