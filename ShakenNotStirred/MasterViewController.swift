@@ -39,9 +39,30 @@ class MasterViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func insertNewObject(sender: AnyObject) {
-        objects += Bar(name: "Awesome bar", notes: "Some notes")
+        let alert = UIAlertController(title: "New Task",
+            message: "",
+            preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler { textField in
+            textField.placeholder = "Local edition"
+        }
+        let cancelAction = UIAlertAction(title: "Cancel",
+            style: .Default) { action in
+                alert.dismissViewControllerAnimated(true) {}
+        }
+        alert.addAction(cancelAction)
+        let createAction = UIAlertAction(title: "Create",
+            style: .Default) { action in
+                let textField = alert.textFields[0] as UITextField
+                self.addBar(Bar(name: textField.text, notes: "Some notes"))
+        }
+        alert.addAction(createAction)
+        presentViewController(alert, animated: true) {}
+    }
+    
+    func addBar(bar: Bar) {
+        objects += bar
         let indexPath = NSIndexPath(forRow: objects.count - 1, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }

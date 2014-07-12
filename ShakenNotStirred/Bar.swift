@@ -16,4 +16,8 @@ class Bar: NSObject {
         self.name = name
         self.notes = notes
     }
+    
+    func description() -> String  {
+        return name
+    }
 }
