@@ -13,6 +13,8 @@ class Bar: NSObject {
     var notes: String = ""
     var picture: UIImage = UIImage(named: "noPicture.png")
     
+    init() {}
+    
     init(name: String, notes: String) {
         self.name = name
         self.notes = notes

@@ -171,11 +171,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPa-z7-bEs">
+                                <rect key="frame" x="20" y="74" width="190" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2S-wO-G6Q">
+                                <rect key="frame" x="249" y="123" width="48" height="30"/>
+                                <state key="normal" title="Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="capturePicture:" destination="RqV-OP-jB8" eventType="touchUpInside" id="7jw-65-vbu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ont-FA-A0c"/>
                     <connections>
+                        <outlet property="barPicturePreview" destination="VPa-z7-bEs" id="Ujb-vb-mxY"/>
                         <outlet property="nameField" destination="i7s-KX-HnB" id="Qbj-Md-O6l"/>
                         <outlet property="notesField" destination="m7z-ry-wfS" id="wyY-rk-omS"/>
                     </connections>
