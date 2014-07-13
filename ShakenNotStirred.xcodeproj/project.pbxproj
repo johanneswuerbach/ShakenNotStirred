@@ -40,7 +40,6 @@
 		8F1815881971DC4B003F067F /* ShakenNotStirredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakenNotStirredTests.swift; sourceTree = "<group>"; };
 		8F1A5CF01971DECC007DA964 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		C07C73071971FF28009902FD /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		C983608E1971EFC00006561F /* ShakenNotStirred-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShakenNotStirred-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +88,6 @@
 				8F18157C1971DC4B003F067F /* Images.xcassets */,
 				8F1815711971DC4B003F067F /* Supporting Files */,
 				8F1A5CF01971DECC007DA964 /* Bar.swift */,
-				C983608E1971EFC00006561F /* ShakenNotStirred-Bridging-Header.h */,
 				C07C73071971FF28009902FD /* AddViewController.swift */,
 			);
 			path = ShakenNotStirred;
