@@ -13,6 +13,7 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [Bar]()
 
+    @IBOutlet var barTableView: UITableView
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -122,7 +123,32 @@ class MasterViewController: UITableViewController {
             self.detailViewController!.bar = object
         }
     }
-
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    func viewDidAppear() {
+        becomeFirstResponder()
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
+        if (motion == UIEventSubtype.MotionShake)
+        {
+            // User was shaking the device. Post a notification named "shake."
+            let randomBarIndex = Int(arc4random_uniform(UInt32(objects.count)))
+            let object = objects[randomBarIndex]
+            self.detailViewController!.bar = object
+            
+            NSLog("load random bar %i", randomBarIndex)
+            
+            let indexPath = NSIndexPath(forRow: randomBarIndex, inSection: 0)
+            barTableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.Middle)
+            
+            performSegueWithIdentifier("showDetail", sender: self)
+            
+        }
+    }
 
 }
 
