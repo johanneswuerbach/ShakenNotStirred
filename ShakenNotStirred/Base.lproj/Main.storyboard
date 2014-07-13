@@ -114,12 +114,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="W1s-ll-fwu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zgY-jy-HKw">
                             <connections>
-                                <segue destination="RqV-OP-jB8" kind="show" identifier="Add" id="FbE-tJ-3hg"/>
+                                <segue destination="RqV-OP-jB8" kind="show" identifier="Add" id="6u3-eq-oGk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="barTableView" destination="r7i-6Z-zg0" id="Ivb-Sc-QLa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
