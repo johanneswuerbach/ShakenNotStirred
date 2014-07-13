@@ -14,7 +14,7 @@
 		8F18157D1971DC4B003F067F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F18157C1971DC4B003F067F /* Images.xcassets */; };
 		8F1815891971DC4B003F067F /* ShakenNotStirredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1815881971DC4B003F067F /* ShakenNotStirredTests.swift */; };
 		8F1A5CF11971DECC007DA964 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A5CF01971DECC007DA964 /* Bar.swift */; };
-		C98360911971EFC00006561F /* SelectBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C98360901971EFC00006561F /* SelectBar.m */; };
+		C07C73081971FF28009902FD /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C73071971FF28009902FD /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,8 @@
 		8F1815871971DC4B003F067F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1815881971DC4B003F067F /* ShakenNotStirredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakenNotStirredTests.swift; sourceTree = "<group>"; };
 		8F1A5CF01971DECC007DA964 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		C07C73071971FF28009902FD /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C983608E1971EFC00006561F /* ShakenNotStirred-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShakenNotStirred-Bridging-Header.h"; sourceTree = "<group>"; };
-		C983608F1971EFC00006561F /* SelectBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBar.h; sourceTree = "<group>"; };
-		C98360901971EFC00006561F /* SelectBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,14 +84,13 @@
 			children = (
 				8F1815731971DC4B003F067F /* AppDelegate.swift */,
 				8F1815751971DC4B003F067F /* MasterViewController.swift */,
-				C983608F1971EFC00006561F /* SelectBar.h */,
-				C98360901971EFC00006561F /* SelectBar.m */,
 				8F1815771971DC4B003F067F /* DetailViewController.swift */,
 				8F1815791971DC4B003F067F /* Main.storyboard */,
 				8F18157C1971DC4B003F067F /* Images.xcassets */,
 				8F1815711971DC4B003F067F /* Supporting Files */,
 				8F1A5CF01971DECC007DA964 /* Bar.swift */,
 				C983608E1971EFC00006561F /* ShakenNotStirred-Bridging-Header.h */,
+				C07C73071971FF28009902FD /* AddViewController.swift */,
 			);
 			path = ShakenNotStirred;
 			sourceTree = "<group>";
@@ -221,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07C73081971FF28009902FD /* AddViewController.swift in Sources */,
 				8F1815781971DC4B003F067F /* DetailViewController.swift in Sources */,
 				8F1A5CF11971DECC007DA964 /* Bar.swift in Sources */,
-				C98360911971EFC00006561F /* SelectBar.m in Sources */,
 				8F1815761971DC4B003F067F /* MasterViewController.swift in Sources */,
 				8F1815741971DC4B003F067F /* AppDelegate.swift in Sources */,
 			);

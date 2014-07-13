@@ -27,8 +27,8 @@ class MasterViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        //let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+        //self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
@@ -61,6 +61,10 @@ class MasterViewController: UITableViewController {
         presentViewController(alert, animated: true) {}
     }
     
+    func insertBar(bar: Bar) {
+        objects.append(bar)
+    }
+    
     func addBar(bar: Bar) {
         objects += bar
         let indexPath = NSIndexPath(forRow: objects.count - 1, inSection: 0)
@@ -74,6 +78,9 @@ class MasterViewController: UITableViewController {
             let indexPath = self.tableView.indexPathForSelectedRow()
             let object = objects[indexPath.row]
             ((segue.destinationViewController as UINavigationController).topViewController as DetailViewController).bar = object
+        } else if segue.identifier == "Add" {
+            var viewController = segue.destinationViewController as AddViewController
+            viewController.masterViewController = self
         }
     }
 
