@@ -14,6 +14,7 @@
 		8F18157D1971DC4B003F067F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F18157C1971DC4B003F067F /* Images.xcassets */; };
 		8F1815891971DC4B003F067F /* ShakenNotStirredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1815881971DC4B003F067F /* ShakenNotStirredTests.swift */; };
 		8F1A5CF11971DECC007DA964 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A5CF01971DECC007DA964 /* Bar.swift */; };
+		8FEFC1B719720A9200AB4CBC /* BarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEFC1B619720A9200AB4CBC /* BarTableViewCell.swift */; };
 		C07C73081971FF28009902FD /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C73071971FF28009902FD /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		8F1815871971DC4B003F067F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1815881971DC4B003F067F /* ShakenNotStirredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakenNotStirredTests.swift; sourceTree = "<group>"; };
 		8F1A5CF01971DECC007DA964 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		8FEFC1B619720A9200AB4CBC /* BarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewCell.swift; sourceTree = "<group>"; };
 		C07C73071971FF28009902FD /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				8F1815731971DC4B003F067F /* AppDelegate.swift */,
 				8F1815751971DC4B003F067F /* MasterViewController.swift */,
 				8F1815771971DC4B003F067F /* DetailViewController.swift */,
+				8FEFC1B619720A9200AB4CBC /* BarTableViewCell.swift */,
 				8F1815791971DC4B003F067F /* Main.storyboard */,
 				8F18157C1971DC4B003F067F /* Images.xcassets */,
 				8F1815711971DC4B003F067F /* Supporting Files */,
@@ -222,6 +225,7 @@
 				8F1A5CF11971DECC007DA964 /* Bar.swift in Sources */,
 				8F1815761971DC4B003F067F /* MasterViewController.swift in Sources */,
 				8F1815741971DC4B003F067F /* AppDelegate.swift in Sources */,
+				8FEFC1B719720A9200AB4CBC /* BarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

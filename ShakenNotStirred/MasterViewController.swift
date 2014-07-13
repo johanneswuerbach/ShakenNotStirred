@@ -100,6 +100,7 @@ class MasterViewController: UITableViewController {
 
         let object = objects[indexPath.row]
         cell.textLabel.text = object.description
+        cell.imageView.image = object.picture
         return cell
     }
 
